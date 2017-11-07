@@ -1,0 +1,14 @@
+form{
+    display: inline-block;
+}
+
+img{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
+
+.mian{
+    width: 970px;
+    margin: 0 auto;
+}

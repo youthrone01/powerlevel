@@ -1,0 +1,17 @@
+<div class="header">
+  <div>
+    <form  #formData='ngForm' (submit)="onSubmit()">
+      <h1>Initial Power Level:</h1>
+      <input type="number" name="temp" min="1" max="100" [(ngModel)]="temp" #temp1='ngModel' required>
+      {{ temp1.errors  | json }}<br>
+      <input type="submit" [disabled]="temp>100 || temp<1" value="Calculate Powers">
+    </form>
+    <img src="https://orig00.deviantart.net/50d5/f/2013/136/a/e/goku____super_saiyan_by_thevulcanresistance-d65hn32.jpg" alt="saiyan">
+  </div>
+  <div>
+    <app-human [mypower]="power"></app-human>
+    <app-supersaiyantwo [mypower]="power"></app-supersaiyantwo>
+    <app-supersaiyanthree [mypower]="power" ></app-supersaiyanthree>
+    
+  </div>
+</div>
